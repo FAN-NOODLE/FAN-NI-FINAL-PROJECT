@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f6eaf38fe3919409ccbcf2fda27e79, type: 3}
+  m_Name: EmotionVisualConfig
+  m_EditorClassIdentifier: 
+  entries:
+  - type: 0
+    icon: {fileID: 21300000, guid: 10143edfb32b9d64699b32d97d551bcc, type: 3}
+    color: {r: 0.9685534, g: 0.94065857, b: 0.34417143, a: 0}
+  - type: 1
+    icon: {fileID: 21300000, guid: a24ec3bb00dc176499b8017a855f4884, type: 3}
+    color: {r: 1, g: 0.62377584, b: 0.27987415, a: 0}
+  - type: 2
+    icon: {fileID: 21300000, guid: 2693a4405d4f57e4b9b2629d6ca9ceb0, type: 3}
+    color: {r: 0.9679482, g: 0.3679244, b: 1, a: 0}
+  - type: 3
+    icon: {fileID: 21300000, guid: 24b54a8c184faf645b857fe537d8e503, type: 3}
+    color: {r: 0.4433961, g: 0.60933137, b: 1, a: 0}
+  - type: 4
+    icon: {fileID: 21300000, guid: 847fa77277269204a92f74c034b84538, type: 3}
+    color: {r: 0.5877748, g: 0.9685534, b: 0.5208258, a: 0}
