@@ -1,1 +1,0 @@
-Open the "gameexe" folder and click on "My Project.exe" to experience the local version of the game. You can use keys 1-5 to switch between different emotions.
