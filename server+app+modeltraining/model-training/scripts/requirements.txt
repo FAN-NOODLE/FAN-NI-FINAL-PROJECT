@@ -1,0 +1,18 @@
+# 核心
+torch==2.3.1
+
+
+# 数据与评估
+pandas
+pyarrow
+scikit-learn
+scipy
+pyyaml
+matplotlib
+seaborn
+
+
+# 导出与推理
+onnx
+onnxruntime==1.19.2
+

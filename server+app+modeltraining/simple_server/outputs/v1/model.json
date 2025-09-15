@@ -1,0 +1,35 @@
+{
+  "version": "v1.0.0",
+  "feat_order": [
+    "HR_mean",
+    "HR_slope",
+    "ACC_rms",
+    "ACC_energy",
+    "ACC_zcr"
+  ],
+  "norm_mean": [
+    59.98027801513672,
+    0.0009401871357113123,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "norm_std": [
+    4.970131874084473,
+    7.007197856903076,
+    9.999999974752427e-07,
+    9.999999974752427e-07,
+    9.999999974752427e-07
+  ],
+  "labels": [
+    "Excited",
+    "Happy",
+    "Anxious",
+    "Sad",
+    "Calm"
+  ],
+  "framework": "pytorch-2.x",
+  "onnx_opset": 13,
+  "onnxruntime": "1.19.2",
+  "training_seed": 42
+}

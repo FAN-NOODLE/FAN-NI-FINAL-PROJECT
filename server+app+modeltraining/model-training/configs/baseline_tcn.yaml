@@ -1,0 +1,29 @@
+version: "v1.0.0"
+model: TCN
+labels: ["Excited","Happy","Anxious","Sad","Calm"]
+feat_order: ["HR_mean","HR_slope","ACC_rms","ACC_energy","ACC_zcr"]
+
+input_len: 12
+n_feats: 5
+
+# TCN 超参
+channels: [32, 64, 64]
+kernel_size: 3
+dropout: 0.1
+
+train:
+  epochs: 20
+  batch_size: 64
+  lr: 1.0e-3
+  weight_decay: 1.0e-2
+  label_smoothing: 0.05
+  early_stop_patience: 10
+  class_weight: true
+  cosine_decay: true
+  num_workers: 0        # Windows 建议 0；若在 Linux/GPU 可改 2-4
+  amp: false            # 仅 GPU 生效；CPU 会自动用 FP32
+
+seed: 42
+opset: 13
+onnxruntime: "1.19.2"
+providers: ["CPUExecutionProvider"]

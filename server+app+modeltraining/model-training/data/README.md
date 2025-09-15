@@ -1,0 +1,4 @@
+- 每行一个秒级样本：time, HR_mean, HR_slope, ACC_rms, ACC_energy, ACC_zcr, subject_id, session_id, activity, label
+- activity 取值示例：sitting / walking / running
+- label 取值固定：Excited, Happy, Anxious, Sad, Calm
+- 窗口构造：步长 1s，长度 12，标签取窗尾时刻

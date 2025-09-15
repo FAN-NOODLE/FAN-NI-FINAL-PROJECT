@@ -1,0 +1,30 @@
+version: "v1.0.0"
+model: BiLSTM
+labels: ["Excited","Happy","Anxious","Sad","Calm"]
+feat_order: ["HR_mean","HR_slope","ACC_rms","ACC_energy","ACC_zcr"]
+
+input_len: 12
+n_feats: 5
+
+# BiLSTM 超参
+hidden_size: 64
+num_layers: 1
+attn: true
+dropout: 0.1
+
+train:
+  epochs: 20
+  batch_size: 64
+  lr: 1.0e-3
+  weight_decay: 1.0e-2
+  label_smoothing: 0.05
+  early_stop_patience: 10
+  class_weight: true
+  cosine_decay: true
+  num_workers: 0        # Windows 建议 0，避免 DataLoader 卡住
+  amp: false             # 仅在 GPU 上生效；CPU 上自动降级
+
+seed: 42
+opset: 13
+onnxruntime: "1.19.2"
+providers: ["CPUExecutionProvider"]
