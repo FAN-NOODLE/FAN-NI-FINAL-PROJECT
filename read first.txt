@@ -1,2 +1,0 @@
-1. "The part 'server + app + model training' contains content related to the server, Apple Watch app, and model training, while the rest pertains to the emotional game."
-2. Open the "gameexe" folder and click on "My Project.exe" to experience the local version of the game. You can use keys 1-5 to switch between different emotions.
